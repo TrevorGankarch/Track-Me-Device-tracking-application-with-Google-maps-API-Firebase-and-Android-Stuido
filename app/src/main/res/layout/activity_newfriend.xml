@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/backgroundcolor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="16dp">
+
+
+        <EditText
+            android:id="@+id/et_reqphone"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext"
+            android:drawableRight="@drawable/person"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Friend's Phone No"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textColorHint="@color/fontcol" />
+
+        <TextView
+            android:id="@+id/tvreqerr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:text="  "
+            android:textColor="#fef77a6d"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bsendreq"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shadow"
+            android:clickable="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Send Request"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <ProgressBar
+            android:id="@+id/pbrreq"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

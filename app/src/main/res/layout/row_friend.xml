@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivfrnd"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitCenter" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvfrndname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Full Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#4277bc" />
+
+            <TextView
+                android:id="@+id/tvfrndphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvlocname"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Phone No"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#96b1ba" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

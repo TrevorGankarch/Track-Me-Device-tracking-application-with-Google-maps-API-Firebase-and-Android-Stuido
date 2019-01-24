@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrackMe</string>
+    <string name="add_emergency_contacts">Add Emergency Contacts</string>
+    <string name="sosmessage"><![CDATA[I am here <location> in emergency situation]]></string>
+    <string name="sossms"><![CDATA[<location> will be replaced with your real location information]]></string>
+    <string name="sostitle">Send emergency notification to pre specified friends at once.</string>
+    <string name="done">Done</string>
+    <string name="verificationtitle">Verify Your Number</string>
+    <string name="checkbutsos">Show emergency request button on login screen</string>
+    <string name="dev">CSE 16 - Group 0</string>
+</resources>

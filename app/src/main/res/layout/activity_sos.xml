@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvsos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.07"
+                android:text="@string/sostitle"
+                android:textAlignment="center"
+                android:textColor="@color/fontcol"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+
+                android:background="@color/lightgray" />
+
+            <EditText
+                android:id="@+id/etsosmessage"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittext"
+                android:drawablePadding="16dp"
+                android:enabled="false"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:paddingTop="5dp"
+                android:singleLine="false"
+                android:text="@string/sosmessage"
+                android:textColorHint="#fe1994ae"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvp1eerr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="0.07"
+                android:text="@string/sossms"
+                android:textColor="#fef77a6d"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="25dp"
+
+                android:background="@color/lightgray" />
+
+
+            <ListView
+                android:id="@+id/list_sos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:scrollbars="vertical" />
+
+
+            <Button
+                android:id="@+id/baddmem"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shadow"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:text="@string/add_emergency_contacts"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+
+            <CheckBox
+                android:id="@+id/ckmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:checked="false"
+                android:clickable="true"
+                android:enabled="false"
+                android:text="@string/checkbutsos" />
+
+            <ProgressBar
+                android:id="@+id/pbrsos"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bsavesos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shadow"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
